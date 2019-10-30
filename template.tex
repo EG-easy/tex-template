@@ -12,6 +12,7 @@
 \usepackage{okumacro}
 \usepackage[dvipdfmx]{hyperref}
 \usepackage{pxjahyper}
+\usepackage{minted}
 %\usepackage{txfonts}
 
 %\pagestyle{empty}
@@ -125,3 +126,15 @@ Hi, Temple!
 \end{figure}
 \end{multicols}
 
+% ソースコードを入れる
+\begin{minted}[linenos,
+               numbersep=5pt,
+               frame=lines,
+               framesep=2mm]{c}
+#include <stdio.h>
+
+int main(void) {
+    printf("Hello, world!\n");
+    return 0;
+}
+\end{minted}
