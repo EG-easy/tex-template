@@ -1,0 +1,127 @@
+\documentclass{jsarticle}
+\usepackage{bm}
+\usepackage{fancyhdr}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{braket}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{graphicx}
+\usepackage{here}
+\usepackage{multicol}
+\usepackage{okumacro}
+\usepackage[dvipdfmx]{hyperref}
+\usepackage{pxjahyper}
+%\usepackage{txfonts}
+
+%\pagestyle{empty}
+\pagestyle{fancy}
+\rhead{templete}
+
+
+\begin{document}
+
+\title{TEMPLETE}
+\author{Mr. temple}
+\date{\today}
+\maketitle
+
+%\newpage
+%\tableofcontents
+%\newpage
+
+\section*{}
+This is a templete file.
+
+ \section*{1}
+Hello, world.
+\subsection*{1}
+Hi, Temple!
+
+
+\end{document}
+
+%表の挿入
+\begin{table}[H]
+\begin{center}
+\caption{表のタイトル}
+\begin{tabular}{ccc} \hline
+ &  &  \\ \hline
+ &  &  \\
+ &  &  \\
+ &  &  \\
+ &  &  \\ \hline
+\end{tabular}
+\end{center}
+\end{table}
+
+
+%図の挿入
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width = 12.0cm, bb= 0 0 360 252]{ファイル名.eps}
+\end{center}
+\caption{グラフのタイトル}
+\label{fig:}
+\end{figure}
+
+
+%図を2つ並列
+\begin{figure}[H]
+\begin{minipage}{0.50\hsize}
+\begin{center}
+\includegraphics[width = 4.0cm,bb=0 0 600 600]{.ps}
+\end{center}
+\caption{タイトル}
+\label{fig:}
+\end{minipage}
+\begin{minipage}{0.50\hsize}
+\begin{center}
+\includegraphics[width = 4.0cm,bb=0 0 600 600]{.ps}
+\end{center}
+\caption{タイトル}
+\label{fig:}
+\end{minipage}
+\end{figure}
+
+
+
+%図を3つ並列
+\begin{figure}[H]
+\begin{minipage}{0.33\hsize}
+\begin{center}
+\includegraphics[width = 4.0cm,bb=0 0 600 600]{.ps}
+\end{center}
+\caption{タイトル}
+\label{fig:}
+\end{minipage}
+\begin{minipage}{0.33\hsize}
+\begin{center}
+\includegraphics[width = 4.0cm,bb=0 0 600 600]{.ps}
+\end{center}
+\caption{タイトル}
+\label{fig:}
+\end{minipage}
+\begin{minipage}{0.33\hsize}
+\begin{center}
+\includegraphics[width = 4.0cm,bb=0 0 600 600]{.ps}
+\end{center}
+\caption{タイトル}
+\label{fig:}
+\end{minipage}
+\end{figure}
+
+
+%文章と図の2段組
+\begin{multicols}{2}
+文章
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width = 12.0cm, bb= 0 0 360 252]{.eps}%図
+\end{center}
+\caption{タイトル}
+\label{fig:1.1.1}
+\end{figure}
+\end{multicols}
+
